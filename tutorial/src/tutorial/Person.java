@@ -1,41 +1,17 @@
 package tutorial;
 
-public class Person {
-	int age = 0;
-	String firstName = "John";
-	String lastName = "Doe";
-	boolean student = true;
+public interface Person {
 
-	public int getAge() {
-		return age;
-	}
+	void setAge(int age);
 
-	public void setAge(int age) {
-		this.age = age;
-	}
+	void setFirstName(String firstName);
 
-	public String getFirstName() {
-		return firstName;
-	}
+	void setLastName(String lastName);
 
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
+	boolean isStudent();
 
-	public String getLastName() {
-		return lastName;
-	}
+	void setStudent(boolean student);
 
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
-
-	public boolean isStudent() {
-		return student;
-	}
-
-	public void setStudent(boolean student) {
-		this.student = student;
-	}
+	void printStates();
 
 }
